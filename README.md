@@ -42,7 +42,7 @@ for sample instance and example :
 ### Factorial:
 
 
-```
+```verilog
 op1 = 10'd5;
 op2 = 10'd1;
 instruction = MUL;
