@@ -57,14 +57,14 @@ module arithmetic_unit(op1, op2, out, instruction, carry_flag, parity_flag, eq_f
     parameter MUL = 8'b00000011;
     parameter AND = 8'b00000100;
     parameter OR  = 8'b00000101;
-    parameter NOT = 8'b00000101;
-    parameter XOR = 8'b00000110;
-    parameter INC = 8'b00000111;
-    parameter DEC = 8'b00001000;
-    parameter ROR = 8'b00001001;
-    parameter ROL = 8'b00001010;
-    parameter RSH = 8'b00001011;
-    parameter LSH = 8'b00001100;
+    parameter NOT = 8'b00000110;
+    parameter XOR = 8'b00000111;
+    parameter INC = 8'b00001000;
+    parameter DEC = 8'b00001001;
+    parameter ROR = 8'b00001010;
+    parameter ROL = 8'b00001011;
+    parameter RSH = 8'b00001100;
+    parameter LSH = 8'b00001101;
 
     /* logic block instances */
     int8_addsub add(op1[7:0], op2[7:0], add_en, add_reg, add_c);   

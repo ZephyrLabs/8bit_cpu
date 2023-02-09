@@ -26,14 +26,14 @@ SUB |8'b00000010|op1 - op2|
 MUL |8'b00000011|op1 * op2|
 AND |8'b00000100|op1 AND op2|
 OR  |8'b00000101|op1 OR op2|
-NOT |8'b00000101|NOT op1|
-XOR |8'b00000110|op1 XOR op2|
-INC |8'b00000111|increment op1 (susceptible to integer overflow)|
-DEC |8'b00001000|increment op1 (susceptible to integer underflow)|
-ROR |8'b00001001|rotate op1 bits right, store LSB in carry flag|
-ROL |8'b00001010|rotate op1 bits left, store MSB in carry flag|
-RSH |8'b00001011|shift op1 bits right, store LSB in carry flag|
-LSH |8'b00001100|shift op1 bits left, store MSB in carry flag|
+NOT |8'b00000110|NOT op1|
+XOR |8'b00000111|op1 XOR op2|
+INC |8'b00001000|increment op1 (susceptible to integer overflow)|
+DEC |8'b00001001|increment op1 (susceptible to integer underflow)|
+ROR |8'b00001010|rotate op1 bits right, store LSB in carry flag|
+ROL |8'b00001011|rotate op1 bits left, store MSB in carry flag|
+RSH |8'b00001100|shift op1 bits right, store LSB in carry flag|
+LSH |8'b00001101|shift op1 bits left, store MSB in carry flag|
 
 ref. to `/ALU/verification/arithmetic_unit/arithmetic_unit_tb.v`
 
